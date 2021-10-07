@@ -1,0 +1,126 @@
+:root {  
+  --red: #ff6f69;  
+  --beige: #FFFFCC;  
+  --yellow: #FFFF99;
+  --gray: #606060;
+  --darkgray: #A0A0A0;
+  --lightblue: #dae3e9;
+  --blue:#34526F;
+  --darkblue:#32527b;
+  --black: #000000;
+  --orange: #ab8b4b;
+  --burntorange:#ab734b;
+  --white: #FFFFFF;
+ --fontStyles: #c7cef0;
+  --photo: #ff4830;
+  --quote: #ff8800;
+  --link: #00d238;
+  --chat: #03b5ff;
+  --audio: #7c5df7;
+  --video: #fd62cb;
+}
+
+.theme-dark{
+--background-primary: var(--blue);
+--background-secondary: var(--darkblue);
+}
+
+/* Colours ! */
+
+.workspace-ribbon {
+  background-color: var(--blue);
+}
+.titlebar {
+  background-color: var(--darkblue);
+}
+.titlebar-left {
+  background-color: var(--lightblue);
+}
+.nav-file-title.is-active {
+    background-color: var(--black);
+}
+.workspace-tab-header-container {
+    background-color: var(--blue);
+}
+.titlebar-button-container {
+  background-colour: var(--blue);
+}
+.markdown-preview-view {
+  color: var(--white);
+}
+.markdown-preview-view strong {
+  color: var(--fontStyles);
+}
+.markdown-preview-view em {
+  color: var(--fontStyles);
+}
+
+/* Navigation file titles are wrapped automatically */
+
+.nav-file-title,
+.nav-folder-title {
+  white-space: normal;
+  width: 100%;
+}
+
+/* Monospace font */
+.markdown-preview-view,
+.cm-s-obsidian{
+    font-family: Hack, monospace;
+    font-weight: 500;
+}
+
+/* Header bars from @EleanorKonik */
+
+.heading-collapse-indicator.collapse-indicator.collapse-icon svg.right-triangle{
+  height: 18px;
+  width: 18px;
+}
+
+.markdown-preview-section h1, .markdown-preview-section h2, .markdown-preview-section h3,
+.markdown-preview-section h4, .markdown-preview-section h5, .markdown-preview-section h6{
+  padding: 8px 0 8px 32px;
+  margin: 8px 0;
+}
+
+.markdown-embed .markdown-preview-section h1, .markdown-embed .markdown-preview-section h2, .markdown-embed .markdown-preview-section h3,
+.markdown-embed .markdown-preview-section h4, .markdown-embed .markdown-preview-section h5, .markdown-embed .markdown-preview-section h6{
+  padding: 4px 0 4px 8px;
+  margin: 4px 0;
+}
+
+.markdown-preview-section h1,
+.markdown-preview-section h2{
+  border-bottom: 4px solid var(--background-modifier-border);
+}
+
+.markdown-preview-section h1,
+.HyperMD-header-1.CodeMirror-line{
+  background-color: var(--photo);
+}
+
+.markdown-preview-section h2,
+.HyperMD-header-2.CodeMirror-line{
+  background-color: var(--quote);
+}
+
+.markdown-preview-section h3,
+.HyperMD-header-3.CodeMirror-line{
+  background-color: var(--link);
+}
+
+.markdown-preview-section h4,
+.HyperMD-header-4.CodeMirror-line{
+  background-color: var(--chat);
+}
+
+.markdown-preview-section h5,
+.HyperMD-header-5.CodeMirror-line{
+  background-color: var(--audio);
+}
+
+.markdown-preview-section h6,
+.HyperMD-header-6.CodeMirror-line{
+  background-color: var(--video);
+  color: var(--white);
+}
