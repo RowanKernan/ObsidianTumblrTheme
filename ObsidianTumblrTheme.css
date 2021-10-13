@@ -97,30 +97,103 @@
 .markdown-preview-section h1,
 .HyperMD-header-1.CodeMirror-line{
   background-color: var(--photo);
+  text-align: center;
 }
 
 .markdown-preview-section h2,
 .HyperMD-header-2.CodeMirror-line{
   background-color: var(--quote);
+text-align: center;
 }
 
 .markdown-preview-section h3,
 .HyperMD-header-3.CodeMirror-line{
   background-color: var(--link);
+text-align: center;
 }
 
 .markdown-preview-section h4,
 .HyperMD-header-4.CodeMirror-line{
   background-color: var(--chat);
+text-align: center;
 }
 
 .markdown-preview-section h5,
 .HyperMD-header-5.CodeMirror-line{
   background-color: var(--audio);
+text-align: center;
 }
 
 .markdown-preview-section h6,
 .HyperMD-header-6.CodeMirror-line{
   background-color: var(--video);
   color: var(--white);
+text-align: center;
+}
+
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* left sidebar text color */
+.nav-folder-title-content, .nav-file-title-content 
+{color: #e3fcfa !important; }
+
+
+/*block quotes */
+.markdown-preview-view blockquote {
+  display:block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+  
+  /*Borders - (Optional)*/
+  border-left: 15px solid #c76c0c;
+  border-right: 2px solid #c76c0c;
+  
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+}
+.markdown-preview-view blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  
+  /*Positioning*/
+  position: absolute;
+  left: 5px;
+  top:5px;
+}
+.markdown-preview-view blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+markdown-preview-view blockquote a{
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c;
+}
+.markdown-preview-view blockquote a:hover{
+ color: #666;
+}
+.markdown-preview-view blockquote em{
+  font-style: italic;
 }
